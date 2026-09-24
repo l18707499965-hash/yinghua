@@ -27,5 +27,12 @@
 - 单产物单预览，对外只暴露 5000，禁止 hardcode，不碰 9000
 - Node 依赖一律 pnpm（本项目无 Node 依赖）
 
+## SEO 要点（当前已配置）
+- 下载入口链接固定为 `https://qjj.pxxpxxpxx.com/yg-api/download/r/x3Wz72E2`（Android/iOS 两个下载按钮共用）
+- head 已含完整 SEO 标注：meta description/keywords、canonical、Open Graph（含 `og:site_name`/`og:image`/`og:image:alt`）、Twitter Card（含 `twitter:image`）、JSON-LD（SoftwareApplication、Organization、FAQPage）
+- `robots.txt` 已配置 `Allow: /` 全开放抓取，并声明 sitemap；`sitemap.xml` 覆盖首页与各锚点区块
+- 品牌站域名 `www.yinghuadm.com`，OG 图片指向 `https://www.yinghuadm.com/logo.png`
+
 ## 常见问题和预防
 - `index.html` 体积大，编辑时注意避免破坏内联资源结构
+- 更换下载地址时，同步替换两处 `<a href="...">下载安装</a>` 链接（Android、iOS 卡片各一处）
