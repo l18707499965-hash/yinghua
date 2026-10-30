@@ -1,5 +1,22 @@
+# robots.txt for 樱花动漫官网
+# 全开放抓取，所有主流搜索引擎均可索引
+
 User-agent: *
 Allow: /
-Disallow: /cgi-bin/
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
 
 Sitemap: https://www.yinghuadm.com/sitemap.xml
